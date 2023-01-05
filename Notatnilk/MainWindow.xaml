@@ -1,0 +1,35 @@
+﻿<Window x:Class="Notatnilk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notatnilk"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Plik">
+                <MenuItem Header="Nowy" Click="Nowy_Click"></MenuItem>
+                <MenuItem Header="Otwórz" Click="Otwórz_Click"></MenuItem>
+                <MenuItem Header="Zapisz" Click="Zapisz_Click"></MenuItem>
+                <MenuItem Header="Zapisz jako" Click="ZapiszJako_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Format">
+                <MenuItem Header="Rozmiar czcionki">
+                    <MenuItem Header="++"></MenuItem>
+                    <MenuItem Header="--"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Dzień / Noc" IsCheckable="True"></MenuItem>
+                <MenuItem Header="Kolor"></MenuItem>
+                <MenuItem Header="O programie">
+                    <MenuItem Header="Autor modalnie" Click="AutorModalne_Click"></MenuItem>
+                    <MenuItem Header="Autor niemodalnie" Click="AutorNiemodalne_Click"></MenuItem>
+                    <MenuItem Header="Informacje" Click="Informacje_Click"></MenuItem>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <TextBox x:Name="tekst" AcceptsReturn="True">
+
+        </TextBox>
+    </DockPanel>
+</Window>
